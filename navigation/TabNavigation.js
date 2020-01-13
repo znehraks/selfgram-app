@@ -10,14 +10,13 @@ export default createBottomTabNavigator({
   Home,
   Search,
   Add: {
+    screen: View,
     navigationOptions: {
-      tabBarOnPress: ({navigation}) => {
-          navigation.navigate("PhotoNavigation")
+      tabBarOnPress: ({ navigation }) => {
+        navigation.navigate("PhotoNavigation");
       }
     }
   },
   Notifications,
   Profile
 });
-
-export default createAppContainer(TabNavigation);
